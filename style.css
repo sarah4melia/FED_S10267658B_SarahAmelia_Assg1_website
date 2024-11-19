@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+
+    .placeholder-logo {
+        position: absolute; /* Allows precise positioning */
+        top: 0; /* Positions the photo at the very top */
+        left: 0; /* Positions the photo at the very left */
+        width: 50px; /* Optional: Adjust photo size */
+        height: auto; /* Maintains aspect ratio */
+    }
+}
+
+
+header {
+    background-color: lightblue; 
+    color: white; 
+    padding: 20px;
+    text-align: center; 
+}
+
+
+main {
+    padding: 20px;
+    font-size: 18px;
+    color: #333; 
+}
