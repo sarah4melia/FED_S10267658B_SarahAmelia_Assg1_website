@@ -1,3 +1,2 @@
-git add .
-git commit -m "Force redeploy"
-git push origin main
+git add <file>
+git commit -m "Resolved merge conflict"
