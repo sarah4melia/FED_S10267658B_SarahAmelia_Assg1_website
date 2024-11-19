@@ -1,2 +1,4 @@
 # my-first-repo
-my first repo for my FED assignment :o
+git add .
+git commit -m "Force redeploy"
+git push origin main
