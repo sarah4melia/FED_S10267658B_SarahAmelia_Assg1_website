@@ -1,17 +1,9 @@
+/* HOME-PAGE */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
     background-color: white;
-
-    .placeholder-logo {
-        position: absolute; /* Allows precise positioning */
-        top: 0; /* Positions the photo at the very top */
-        left: 0; /* Positions the photo at the very left */
-        width: 50px; /* Optional: Adjust photo size */
-        height: auto; /* Maintains aspect ratio */
-    }
 }
-
 
 header {
     background-color: lightblue; 
@@ -20,9 +12,64 @@ header {
     text-align: center; 
 }
 
+.placeholder-logo {
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    width: 50px; 
+    height: auto; 
+    margin-top: 4px;
+    margin-left: 4px;
+}
+
+.navbar {
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    margin: 0; 
+    margin-left: 50px;
+    padding: 0; 
+    list-style: none; 
+}
+
+.home-page-photo-header {
+    width: 100%;
+}
+
+.photo-row {
+    display: flex; 
+    justify-content: space-between; 
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.photo {
+    width: 30%; 
+    height: auto; 
+}
+
 
 main {
     padding: 20px;
     font-size: 18px;
     color: #333; 
+}
+
+/* PRODUCTS */
+
+.showcase {
+    display: flex; 
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    margin-top: 50px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 20px;
+    gap: 40px;
+}
+
+.product-showcase {
+    width: 46%;
+    height: 30%;
 }
