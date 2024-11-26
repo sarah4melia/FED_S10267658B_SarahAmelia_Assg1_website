@@ -73,3 +73,40 @@ main {
     width: 46%;
     height: 30%;
 }
+
+/* ABOUT US */
+
+.about-us-photo {
+    width: 45%;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.about-us-flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    margin-bottom: 60px;
+}
+
+.about-us-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    margin-top: 60px;
+    margin-right: 50px;
+}
+
+.about-us-text h2 {
+    margin-bottom: 0px;
+}
+
+.about-us-text p {
+    margin-top: 1px;
+}
+
+/* FAQ */
