@@ -28,8 +28,19 @@ header {
     align-items: center; 
     margin: 0; 
     margin-left: 50px;
+    margin-right: 50px;
     padding: 0; 
     list-style: none; 
+}
+
+.cart {
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    width: 25px; 
+    height: auto; 
+    margin-top: 15px;
+    margin-right: 25px;
 }
 
 .home-page-photo-header {
@@ -57,12 +68,15 @@ main {
 }
 
 /* PRODUCTS */
+.product-photo-header {
+    width: 100%
+}
 
 .category {
     display: flex; 
     justify-content: space-around; 
     align-items: center; 
-    margin-top: 150px;
+    margin-top: 25px;
     margin-left: 5px;
     margin-right: 5px;
     padding: 0; 
