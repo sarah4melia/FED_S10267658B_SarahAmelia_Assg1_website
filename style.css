@@ -58,20 +58,20 @@ main {
 
 /* PRODUCTS */
 
-.showcase {
+.category {
     display: flex; 
-    flex-wrap: wrap; 
-    justify-content: space-between; 
-    margin-top: 50px;
-    margin-left: 60px;
-    margin-right: 60px;
-    margin-bottom: 20px;
-    gap: 40px;
+    justify-content: space-around; 
+    align-items: center; 
+    margin-top: 150px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0; 
+    list-style: none; 
 }
 
-.product-showcase {
-    width: 46%;
-    height: 30%;
+.category-showcase {
+    width: 15%;
+    height: auto;
 }
 
 /* ABOUT US */
@@ -107,6 +107,29 @@ main {
 
 .about-us-text p {
     margin-top: 1px;
+}
+
+.socials-flex {
+    display: block;
+    align-self: center;
+    margin: 50px;
+    text-align: center;
+}
+
+.socials-flex h3 {
+    margin-bottom: 10px;
+}
+
+.socials-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.socials {
+    width: 25px;
+    height: auto;
 }
 
 /* FAQ */
