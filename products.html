@@ -17,7 +17,7 @@
 
         <a href="index.html">
 
-            <img src="./image resources/placeholder-logo.jpg" alt="h2h logo" class="placeholder-logo">
+            <img src="./image resources/h2h-logo-final.png" alt="h2h logo" class="placeholder-logo">
         
         </a>
 
@@ -40,17 +40,16 @@
     <img src="./image resources/product-header.png" alt="header" class="product-photo-header">
 
     <div class="category">
-
-        <img src="./image resources/prodshowcase-allproducts.png" alt="All Products" class="category-showcase">
-        <img src="./image resources/prodshowcase-tops.png" alt="Tops" class="category-showcase">
-        <img src="./image resources/prodshowcase-bottoms.png" alt="Bottoms" class="category-showcase">
-        <img src="./image resources/prodshowcase-shoes.png" alt="Shoes" class="category-showcase">
-        <img src="./image resources/prodshowcase-bags.png" alt="Bags" class="category-showcase">
-        <img src="./image resources/prodshowcase-onsale.png" alt="On Sale" class="category-showcase">
-
+        <img src="./image resources/prodshowcase-allproducts.png" alt="All Products" class="category-showcase" onclick="filterProducts('all')">
+        <img src="./image resources/prodshowcase-tops.png" alt="Tops" class="category-showcase" onclick="filterProducts('tops')">
+        <img src="./image resources/prodshowcase-bottoms.png" alt="Bottoms" class="category-showcase" onclick="filterProducts('bottoms')">
+        <img src="./image resources/prodshowcase-shoes.png" alt="Shoes" class="category-showcase" onclick="filterProducts('shoes')">
+        <img src="./image resources/prodshowcase-bags.png" alt="Bags" class="category-showcase" onclick="filterProducts('bags')">
+        <img src="./image resources/prodshowcase-onsale.png" alt="On Sale" class="category-showcase" onclick="filterProducts('sale')">
     </div>
     
-    <section class="product-container">
+    
+    <section class="product-container" data-category="tops">
 
         <div class="product-card">
 
@@ -63,7 +62,7 @@
         </div>
 
 
-        <div class="product-card">
+        <div class="product-card" data-category="shoes">
 
 
             <img src="./image resources/Chunky Heeled Mary Janes.jpg" alt="Product 2">
@@ -75,7 +74,7 @@
         </div>
 
 
-        <div class="product-card">
+        <div class="product-card" data-category="tops">
 
 
             <img src="./image resources/Cotton Collar.jpg" alt="Product 3">
@@ -87,7 +86,7 @@
         </div>
 
 
-        <div class="product-card">
+        <div class="product-card" data-category="bottoms">
 
 
             <img src="./image resources/Linen-blend Maxi Skirt.jpg" alt="Product 4">
@@ -99,7 +98,7 @@
         </div>
 
 
-        <div class="product-card">
+        <div class="product-card" data-category="bags">
 
 
             <img src="./image resources/Faux Leathe Tote Bag.jpg" alt="Product 5">
@@ -111,7 +110,7 @@
         </div>
 
 
-        <div class="product-card">
+        <div class="product-card" data-category="tops">
 
 
             <img src="./image resources/Off-shoulder.jpg" alt="Product 6">
@@ -123,7 +122,7 @@
         </div>
 
 
-        <div class="product-card">
+        <div class="product-card" data-category="shoes">
 
 
             <img src="./image resources/Ballet Mary Jane Flats.jpg" alt="Product 7">
@@ -135,7 +134,7 @@
         </div>
 
 
-        <div class="product-card">
+        <div class="product-card" data-category="bottoms">
 
 
             <img src="./image resources/Straight Leg Trousers.jpg" alt="Product 8">
@@ -147,7 +146,7 @@
         </div>
 
 
-        <div class="product-card">
+        <div class="product-card" data-category="tops">
 
 
             <img src="./image resources/Square Neck Blouse.jpg" alt="Product 9">
@@ -159,7 +158,7 @@
         </div>
 
 
-        <div class="product-card">
+        <div class="product-card" data-category="bags">
 
 
             <img src="./image resources/CLASSIC HANDLE SHOULDER BAG.jpg" alt="Product 10">
@@ -171,7 +170,7 @@
         </div>
 
 
-        <div class="product-card">
+        <div class="product-card" data-category="bottoms">
 
 
             <img src="./image resources/Corduroy Wide Leg Trousers.jpg" alt="Product 11">
@@ -183,7 +182,7 @@
         </div>
 
 
-        <div class="product-card">
+        <div class="product-card" data-category="tops">
 
 
             <img src="./image resources/Mouth Graphic Tee.jpg" alt="Product 12">

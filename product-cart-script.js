@@ -1,4 +1,20 @@
 /* PRODUCTS */
+function filterProducts(category) {
+
+    const productCards = document.querySelectorAll(".product-card");
+
+    productCards.forEach((card) => {
+
+        if (category === "all" || card.getAttribute("data-category") === category) {
+
+            card.style.display = "block";
+
+        } else {
+
+            card.style.display = "none";
+        }
+    });
+}
 
 function showSizePopup(button) {
 
