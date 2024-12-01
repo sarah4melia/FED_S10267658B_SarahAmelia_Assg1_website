@@ -23,7 +23,6 @@
             
             <a href= "products.html"><b>PRODUCTS</b></a></li>
             <a href= "about-us.html"><b>ABOUT US</b></a></li>
-            <a href= "FAQ.html"><b>FAQ</b></a></li>
             <a href= "community.html"><b>COMMUNITY</b></a></li>
 
         </nav>
@@ -44,16 +43,23 @@
 
         <p>New arrivals & Restocks</p>
 
-        <button onclick="products.html" data-type="tops">Check them out!</button>
+        <button id="navigateButton">Check them out!</button>
+        
+        <script>
+            document.getElementById('navigateButton').addEventListener('click', function () {
+                window.location.href = 'products.html';
+            });
+        </script>
+
 
 
     </div>
     
     <div class="photo-row">
 
-        <img src="./image resources/placeholder-photo.jpg" alt="photo 1" class="photo">
-        <img src="./image resources/placeholder-photo.jpg" alt="photo 2" class="photo">
-        <img src="./image resources/placeholder-photo.jpg" alt="photo 3" class="photo">
+        <img src="./image resources/homepage-photo1.jpg" alt="photo 1" class="photo">
+        <img src="./image resources/homepage-photo2.jpg" alt="photo 2" class="photo">
+        <img src="./image resources/homepage-photo3.jpg" alt="photo 3" class="photo">
 
     </div>
 

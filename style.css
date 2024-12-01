@@ -29,6 +29,14 @@ header {
     margin-top: 2px;
 }
 
+.homepage-welcome button {
+    background-color: #eadbdd;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-top: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
 .placeholder-logo {
     position: absolute; 
     top: 0; 
