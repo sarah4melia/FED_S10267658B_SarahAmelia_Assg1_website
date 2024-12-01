@@ -107,7 +107,7 @@ function closePopup() {
 
 /* CART */
 
-let cart = JSON.parse(localStorage.getItem("cart")) || []; // Initialize cart
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
 function showSizePopup(button) {
     const type = button.getAttribute("data-type");
@@ -177,14 +177,13 @@ function displayCart() {
         return;
     }
 
-    cartContainer.innerHTML = ""; // Clear previous contents
+    cartContainer.innerHTML = "";
     let totalPrice = 0;
 
     cart.forEach((item, index) => {
         const cartItem = document.createElement("div");
         cartItem.classList.add("cart-item");
 
-        // Convert price to a numeric value and add to totalPrice
         const price = parseFloat(item.price.replace('$', '').trim());
         totalPrice += price;
 
@@ -201,7 +200,6 @@ function displayCart() {
         cartContainer.appendChild(cartItem);
     });
 
-    // Display the total price and add a "Proceed to Checkout" button
     const totalPriceElement = document.createElement("div");
     totalPriceElement.classList.add("cart-total");
     totalPriceElement.innerHTML = `
@@ -210,7 +208,6 @@ function displayCart() {
     `;
     cartContainer.appendChild(totalPriceElement);
 
-    // Event listener for the "Proceed to Checkout" button
     document.getElementById("checkoutButton").onclick = () => {
         window.location.href = "checkout.html";
     };
@@ -218,12 +215,11 @@ function displayCart() {
 
 function removeFromCart(index) {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
-    cart.splice(index, 1); // Remove the item at the given index
+    cart.splice(index, 1); 
     localStorage.setItem("cart", JSON.stringify(cart));
-    displayCart(); // Update the cart display
+    displayCart();
 }
 
-// Call displayCart when the cart.html page is loaded
 if (document.getElementById("cartContainer")) {
     displayCart();
 }
