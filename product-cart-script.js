@@ -185,13 +185,19 @@ function displayCart() {
         cartContainer.appendChild(cartItem);
     });
 
-    // Display the total price
+    // Display the total price and add a "Proceed to Checkout" button
     const totalPriceElement = document.createElement("div");
     totalPriceElement.classList.add("cart-total");
     totalPriceElement.innerHTML = `
         <h2>Total: $${totalPrice.toFixed(2)}</h2>
+        <button id="checkoutButton" class="checkout-button">Proceed to Checkout</button>
     `;
     cartContainer.appendChild(totalPriceElement);
+
+    // Event listener for the "Proceed to Checkout" button
+    document.getElementById("checkoutButton").onclick = () => {
+        window.location.href = "checkout.html";
+    };
 }
 
 function removeFromCart(index) {
