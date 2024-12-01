@@ -162,9 +162,15 @@ function displayCart() {
     }
 
     cartContainer.innerHTML = ""; // Clear previous contents
+    let totalPrice = 0;
+
     cart.forEach((item, index) => {
         const cartItem = document.createElement("div");
         cartItem.classList.add("cart-item");
+
+        // Convert price to a numeric value and add to totalPrice
+        const price = parseFloat(item.price.replace('$', '').trim());
+        totalPrice += price;
 
         cartItem.innerHTML = `
             <img src="${item.image}" alt="${item.name}" class="cart-item-image">
@@ -178,34 +184,14 @@ function displayCart() {
 
         cartContainer.appendChild(cartItem);
     });
-}
 
-function displayCart() {
-    const cartContainer = document.getElementById("cartContainer");
-    const cart = JSON.parse(localStorage.getItem("cart")) || [];
-
-    if (cart.length === 0) {
-        cartContainer.innerHTML = "<p>Your cart is empty.</p>";
-        return;
-    }
-
-    cartContainer.innerHTML = ""; // Clear previous contents
-    cart.forEach((item, index) => {
-        const cartItem = document.createElement("div");
-        cartItem.classList.add("cart-item");
-
-        cartItem.innerHTML = `
-            <img src="${item.image}" alt="${item.name}" class="cart-item-image">
-            <div class="cart-item-details">
-                <h3>${item.name}</h3>
-                <p>Price: ${item.price}</p>
-                <p>Size: ${item.size}</p>
-                <button onclick="removeFromCart(${index})">Remove</button>
-            </div>
-        `;
-
-        cartContainer.appendChild(cartItem);
-    });
+    // Display the total price
+    const totalPriceElement = document.createElement("div");
+    totalPriceElement.classList.add("cart-total");
+    totalPriceElement.innerHTML = `
+        <h2>Total: $${totalPrice.toFixed(2)}</h2>
+    `;
+    cartContainer.appendChild(totalPriceElement);
 }
 
 function removeFromCart(index) {
