@@ -1,5 +1,7 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
 
     <meta charset="UTF-8">
@@ -14,22 +16,22 @@
     <header>
 
         <a href="index.html">
-            
+
             <img src="./image resources/placeholder-logo.jpg" alt="h2h logo" class="placeholder-logo">
         
         </a>
 
         <nav class="navbar">
 
-            <a href= "products.html"><b>PRODUCTS</b></a></li>
-            <a href= "about-us.html"><b>ABOUT US</b></a></li>
-            <a href= "FAQ.html"><b>FAQ</b></a></li>
-            <a href= "community.html"><b>COMMUNITY</b></a></li>
+            <a href="products.html"><b>PRODUCTS</b></a>
+            <a href="about-us.html"><b>ABOUT US</b></a>
+            <a href="FAQ.html"><b>FAQ</b></a>
+            <a href="community.html"><b>COMMUNITY</b></a>
 
         </nav>
 
         <a href="cart.html">
-            
+
             <img src="./image resources/cart-icon.png" alt="cart-icon" class="cart">
         
         </a>
@@ -37,103 +39,179 @@
     </header>
 
     <img src="./image resources/home-page-photo-header.jpg" alt="header" class="product-photo-header">
-
-    <div class="category">
-
-        <img src="./image resources/home-page-photo-header.jpg" alt="All Products" class="category-showcase">
-        <img src="./image resources/home-page-photo-header.jpg" alt="Tops" class="category-showcase">
-        <img src="./image resources/home-page-photo-header.jpg" alt="Bottoms" class="category-showcase">
-        <img src="./image resources/home-page-photo-header.jpg" alt="Shoes" class="category-showcase">
-        <img src="./image resources/home-page-photo-header.jpg" alt="Bags" class="category-showcase">
-        <img src="./image resources/home-page-photo-header.jpg" alt="On Sale" class="category-showcase">
-
-    </div>
-
+    
     <section class="product-container">
 
         <div class="product-card">
 
+
             <img src="./image resources/Denim Round Neckline.jpg" alt="Product 1">
             <h3>h2h Bella Denim Ruffle Top</h3>
             <p>$26.00</p>
-            <button onclick="alert('Added to Cart')">Add to Cart</button>
+            <button onclick="showSizePopup(this)" data-type="tops">Add to Cart</button>
+
 
         </div>
 
+
         <div class="product-card">
+
 
             <img src="./image resources/Chunky Heeled Mary Janes.jpg" alt="Product 2">
             <h3>h2h Calla Chunky Mary Janes</h3>
             <p>$44.00</p>
-            <button onclick="alert('Added to Cart')">Add to Cart</button>
+            <button onclick="showSizePopup(this)" data-type="shoes">Add to Cart</button>
+
 
         </div>
 
+
         <div class="product-card">
+
 
             <img src="./image resources/Cotton Collar.jpg" alt="Product 3">
             <h3>h2h Aurelia Cotton Collared Top</h3>
             <p>$24.00</p>
-            <button onclick="alert('Added to Cart')">Add to Cart</button>
+            <button onclick="showSizePopup(this)" data-type="tops">Add to Cart</button>
+
 
         </div>
 
+
         <div class="product-card">
+
 
             <img src="./image resources/Linen-blend Maxi Skirt.jpg" alt="Product 4">
             <h3>h2h Lara Linen Maxi Skirt</h3>
             <p>$30.00</p>
-            <button onclick="alert('Added to Cart')">Add to Cart</button>
+            <button onclick="showSizePopup(this)" data-type="bottoms">Add to Cart</button>
+
 
         </div>
 
+
         <div class="product-card">
+
 
             <img src="./image resources/Faux Leathe Tote Bag.jpg" alt="Product 5">
             <h3>h2h Zaira Faux Leather Tote Bag</h3>
             <p>$15.00</p>
-            <button onclick="alert('Added to Cart')">Add to Cart</button>
+            <button onclick="showSizePopup(this)" data-type="bags">Add to Cart</button>
+
 
         </div>
 
+
         <div class="product-card">
+
 
             <img src="./image resources/Off-shoulder.jpg" alt="Product 6">
             <h3>h2h Youra Off-Shoulder Top</h3>
             <p>$27.00</p>
-            <button onclick="alert('Added to Cart')">Add to Cart</button>
+            <button onclick="showSizePopup(this)" data-type="tops">Add to Cart</button>
+
 
         </div>
 
+
         <div class="product-card">
+
 
             <img src="./image resources/Ballet Mary Jane Flats.jpg" alt="Product 7">
             <h3>h2h Evangeline Bowknot Flats</h3>
             <p>$40.00</p>
-            <button onclick="alert('Added to Cart')">Add to Cart</button>
+            <button onclick="showSizePopup(this)" data-type="shoes">Add to Cart</button>
+
 
         </div>
 
+
         <div class="product-card">
+
 
             <img src="./image resources/Straight Leg Trousers.jpg" alt="Product 8">
             <h3>h2h Madeline Straight Cut Jeans</h3>
             <p>$39.00</p>
-            <button onclick="alert('Added to Cart')">Add to Cart</button>
+            <button onclick="showSizePopup(this)" data-type="bottoms">Add to Cart</button>
+
 
         </div>
 
+
         <div class="product-card">
+
 
             <img src="./image resources/Square Neck Blouse.jpg" alt="Product 9">
             <h3>h2h Mia Square Neck Blouse</h3>
             <p>$37.00</p>
-            <button onclick="alert('Added to Cart')">Add to Cart</button>
+            <button onclick="showSizePopup(this)" data-type="tops">Add to Cart</button>
+
 
         </div>
 
-        <script src="script.js"></script>
+
+        <div class="product-card">
+
+
+            <img src="./image resources/CLASSIC HANDLE SHOULDER BAG.jpg" alt="Product 10">
+            <h3>h2h Seraphina Shoulder Bag</h3>
+            <p>$20.00</p>
+            <button onclick="showSizePopup(this)" data-type="bags">Add to Cart</button>
+
+
+        </div>
+
+
+        <div class="product-card">
+
+
+            <img src="./image resources/Corduroy Wide Leg Trousers.jpg" alt="Product 11">
+            <h3>h2h Odette Corduroy Trousers</h3>
+            <p>$36.00</p>
+            <button onclick="showSizePopup(this)" data-type="bottoms">Add to Cart</button>
+
+
+        </div>
+
+
+        <div class="product-card">
+
+
+            <img src="./image resources/Mouth Graphic Tee.jpg" alt="Product 12">
+            <h3>h2h Maeve Graphic Tee</h3>
+            <p>$19.00</p>
+            <button onclick="showSizePopup(this)" data-type="tops">Add to Cart</button>
+
+
+        </div>
+    
+    </section>
+
+    <div id="sizePopup" class="popup" style="display: none;">
+
+        <div class="popup-content">
+
+            <div class="size-options"></div>
+            <p><a href="#" id="sizeGuideLink" onclick="return false;">View Size Guide</a></p>
+            <button onclick="closePopup()">Close</button>
+
+        </div>
+
+    </div>
+
+    <div id="sizeGuidePopup" class="popup" style="display: none;">
+
+        <div class="popup-content">
+            <table></table>
+            <button onclick="closePopup()">Close</button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
 
 </html>
+
